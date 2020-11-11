@@ -240,7 +240,10 @@ body:not(.topnav-top):not(.header-scroll-transparent):not(.dark-skin) #main-navi
 .one-page.header-transparent.topnav-top #main-navigation #main-menu > ul > li.current > a, .one-page.header-transparent.topnav-top .main-navigation #main-menu > ul > li.current > a {color:#D6D6D6 !important;}
 .header-transparent.transparent-dark.topnav-top .toggle-menu span:not(.menu-label), .header-transparent.transparent-dark.topnav-top .toggle-menu span:not(.menu-label)::before, .header-transparent.transparent-dark.topnav-top .toggle-menu span:not(.menu-label)::after { background: #121212;}
 .header-transparent.topnav-top #header #main-navigation .main-nav-wrapper {background: transparent !important; }
-.header-scroll-dark:not(.topnav-top) #header #main-navigation .main-nav-wrapper, .header-scroll-dark:not(.topnav-top) #header #topbar {background: rgba(0,0,0,0.85);}
+.header-scroll-dark:not(.topnav-top) #header #main-navigation .main-nav-wrapper,
+.header-scroll-dark:not(.topnav-top) #header #topbar {
+  background: #ee3158;
+}
 body:not(.header-tansparent):not(.left-nav):not(.right-nav):not(.header-scroll-dark):not(.header-dark):not(.header-scroll-transparent) #header #main-navigation .main-nav-wrapper {background: #fff; }
 .header-light.header-scroll-dark.topnav-top #main-navigation .main-nav-wrapper, .header-top-light.header-scroll-dark.topnav-top #main-navigation .main-nav-wrapper {background: #fff;}
 .header-light.topnav-top .toggle-menu span:not(.menu-label)::before,.header-light.topnav-top .toggle-menu span:not(.menu-label)::after {background: #303030;}

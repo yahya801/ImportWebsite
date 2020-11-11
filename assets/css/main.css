@@ -34,13 +34,13 @@ body::after {
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
-  background: rgba(71, 55, 78, 0.8);
+  background: #ee3158;
 }
 
 a,
 a:hover,
 a:focus {
-  color: #121212;
+  color: #ee3158;
   text-decoration: none;
   -moz-transition: all .2s;
   -webkit-transition: all .2s;
@@ -134,7 +134,7 @@ h6,
 .h5,
 .h6 {
   text-transform: none;
-  color: #444;
+  color: #ee3158;
 }
 
 .bg-primary h1,
@@ -164,7 +164,7 @@ h6,
 .theme-amber .bg-primary .h4,
 .theme-amber .bg-primary .h5,
 .theme-amber .bg-primary .h6 {
-  color: #121212;
+  color: #ee3158;
 }
 
 h1 {
@@ -222,7 +222,7 @@ h1.big-title {
   position: fixed;
   border: 3px solid #fff;
   color: #fff;
-  background: #333;
+  background: #ee3158;
   display: none;
   z-index: 300;
 }
@@ -256,11 +256,11 @@ h1.big-title {
 
 code {
   color: #E2785D;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #ee3158;
 }
 
 .hljs {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color:#ee3158;
   border-radius: 2px;
 }
 
@@ -472,7 +472,7 @@ hr {
 
 /* SCROLTOP */
 a.scrollup {
-  background: rgba(0, 0, 0, 0.6);
+  background: #ee3158;
   border: 2px solid rgba(255, 255, 255, 0.8);
   height: 40px;
   width: 40px;
@@ -517,7 +517,7 @@ html.page-bordered a.scrollup {
 /* BOXED LAYOUT */
 body.boxed {
   background-image: url(../img/nature/full-42.jpg);
-  background-color: rgb(38, 38, 38);
+  background-color: #ee3158;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -552,7 +552,7 @@ body.boxed.aside-right.aside-menu-open:not(.aside-hover) #main-navigation .main-
 
 .bg-pattern,
 body.boxed.bg-pattern {
-  background-color: rgba(38, 38, 38, 1);
+  background-color:#ee3158;
   background-repeat: repeat;
   -webkit-background-size: auto !important;
   -moz-background-size: auto !important;
@@ -603,7 +603,7 @@ body.boxed .container-large {
   top: 0;
   left: 0;
   bottom: 0;
-  background: #000;
+  background: #ee3158;
   opacity: 0.8;
 }
 
@@ -902,11 +902,11 @@ h2.header-title {
 }
 
 .t-dark .subtitle {
-  color: rgba(0, 0, 0, 0.8);
+  color: #ee3158;
 }
 
 .t-dark .subtitle span {
-  color: rgba(0, 0, 0, 0.3);
+  color:#ee3158;
 }
 
 .intro-message {
@@ -1018,7 +1018,7 @@ h2.header-title {
 }
 
 .header-light .breadcrumb-list li a {
-  color: rgba(0, 0, 0, .9);
+  color: #ee3158;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -5884,7 +5884,7 @@ h5.happy-client {
 table {
   background: #F9F9F9;
   text-align: center;
-  color: #373a3c;
+  color: #ee3158;
 }
 
 .table>tbody>tr>td,
@@ -6111,10 +6111,10 @@ table td.table-link a {
   position: absolute;
   width: 100%;
   padding: 0 0 0 10px;
-  background-color: #262626;
+  background-color: #ee3158;
   border: medium none;
   box-shadow: none;
-  color: #262626;
+  color: #ee3158;
   display: inline-block;
   font-size: 1rem;
   line-height: 20px;

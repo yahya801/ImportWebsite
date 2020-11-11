@@ -3,7 +3,7 @@ FOOTERS
 */
 
 /* GLOBAL */
-#footer {background: rgba(0,0,0,0.85);color:#fff;letter-spacing: 0.1rem;padding:0;margin:0;font-size: 0.9rem; }
+#footer {background:white;color:#fff;letter-spacing: 0.1rem;padding:0;margin:0;font-size: 0.9rem; }
 #footer a {color:#A9A9A9; -webkit-transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;transition: all .3s ease-in-out;}
 #footer a:hover {color:#E0E0E0}
 #footer.img-cover {min-height: 0;}
@@ -14,7 +14,11 @@ FOOTERS
 #footer .widget .widget-title {margin-top: 0;font-size: 13px;letter-spacing: 1px;}
 #footer #footer-main {padding-top:3rem;padding-bottom:3rem; }
 #footer #footer-main.container-fullwidth {padding-left: 130px;padding-right: 130px;}
-#footer #footer-bottom {padding-top:1rem;padding-bottom:1rem;background: rgba(0,0,0,0.5);}
+#footer #footer-bottom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #ee3158;
+}
 #footer #footer-bottom .copyright {font-size: 0.8rem;color:#888888;}
 #footer #footer-bottom.bg-indigo .copyright, #footer #footer-bottom.bg-indigo p, #footer #footer-bottom.bg-indigo a {color:#fff;}
 #footer #footer-bottom p {margin-bottom: 0;margin-top:5px;color:#888888;}
@@ -26,8 +30,10 @@ FOOTERS
 #footer .widget-twitter .tweets-list {padding-left: 0;}
 #footer .widget-twitter .tweets-list li img {display: none;}
 #footer .widget-twitter .tweets-list li small { color: rgba(255,255,255,.45);}
-#footer .form-control {background: #2F2F2F;border:2px solid transparent;color:#fff;}
-#footer .form-control:focus {background: #1F1F1F;}
+#footer .form-control {background: #ee3158;border:2px solid transparent;color:#fff;}
+#footer .form-control:focus {
+  background: #ee3158;
+}
 #footer .container-fluid {padding-right: 30px;padding-left: 30px;}
 @media (max-width: 992px){
   #footer.img-cover {min-height: 0 !important}
