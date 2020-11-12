@@ -360,7 +360,7 @@
               <h3>Our brands</h3>
               <p class="subtitle">We work with best companies</p>
             </div>
-            <div class="owl-carousel owl-theme clients m-b-0 animated" data-animation="fadeIn" data-animation-delay="200" data-items-desktop="4" data-items-tablet="3" data-plugin-options='{"autoplay":true,"nav":false,"autoplayTimeout":3000,"smartSpeed":1000,"items":4,"margin":0}'>
+            <div class="owl-carousel owl-theme clients m-b-0 animated" data-animation="fadeOver" data-animation-delay="150" data-items-desktop="5" data-items-tablet="3" data-plugin-options='{"autoplay":true,"nav":false,"autoplayTimeout":3000,"smartSpeed":1000,"items":4,"margin":0}'>
               <div class="item">
                 <img src="assets/img/logo/gucci.png" alt="logo 6" class="img-fluid">
               </div>
@@ -791,9 +791,15 @@
           </div>
         </section> -->
         <!-- END NEW PRODUCTS -->
-  
+  <!-- BEGIN REGISTER -->
+ 
+  <?php include 'form.php' ?>
+  <!-- </section> -->
+  <!-- </div> -->
+<!-- </section> -->
+  <!-- END REGISTER -->
         <!-- BEGIN NEWSLETTER -->
-        <section class="section section-newsletter t-center img-light" data-bg-img="ecommerce/full-4.jpg" data-start="background-position:0px 40px;" data-end="background-position:0px -150px;">
+        <!-- <section class="section section-newsletter t-center img-light" data-bg-img="ecommerce/full-4.jpg" data-start="background-position:0px 40px;" data-end="background-position:0px -150px;">
           <div class="container">
             <div class="row">
               <div class="title title-center m-b-10">
@@ -808,7 +814,7 @@
               </form>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- END NEWSLETTER -->
   
         <!-- BEGIN PRODUCTS EXTENDED -->
@@ -852,7 +858,7 @@
    
   
         <!-- BEGIN TESTIMONIALS -->
-        <section class="section section-dark" data-bg-img="banner/testimonial.jpg" data-start="background-position:0px 0px;" data-top-bottom="background-position:0px -220px;">
+        <!-- <section class="section section-dark" data-bg-img="banner/testimonial.jpg" data-start="background-position:0px 0px;" data-top-bottom="background-position:0px -220px;">
           <div class="container">
             <div class="row">
               <div class="title title-center m-b-0">
@@ -907,7 +913,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- END TESTIMONIALS -->
   
         
