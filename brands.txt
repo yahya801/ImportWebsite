@@ -1,0 +1,38 @@
+Select Brand
+-- ANY OTHER BRAND --
+ADIDAS
+ALDO
+Amazon
+Armani UK
+ASOS
+Bershka
+BOOHOO
+Clarks
+Debenhams
+DuneLondon
+GAP
+GUCCI
+H&M
+Harrods
+Lacoste
+M&S
+MANGO
+Massimo Dutti
+MotherCare
+NastyGal
+NEXT
+Nike
+Ralph Lauren
+Reebok
+RiverIsland
+SelfRidges
+SportsDirect
+TedBaker
+TkMaxx
+TOPSHOP
+UNDER ARMOUR
+Urban Outfitters
+Victoria's Secret
+Weekday
+ZALANDO
+ZARA
