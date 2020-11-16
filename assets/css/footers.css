@@ -6,13 +6,13 @@ FOOTERS
 #footer {background:white;color:#fff;letter-spacing: 0.1rem;padding:0;margin:0;font-size: 0.9rem; }
 #footer a {color:#A9A9A9; -webkit-transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;transition: all .3s ease-in-out;}
 #footer a:hover {color:#E0E0E0}
-#footer.img-cover {min-height: 0;}
+#footer.img-cover {min-height: 100;}
 #footer p {color:#888888;font-size: 0.9rem;}
 #footer .footer-logo {max-width:200px;width: 100%; display: inline-block;margin-bottom: 2rem;}
 #footer ul { list-style: none; padding: 0;margin: 0;}
 #footer .widget {padding-top: 0;padding-bottom: 0;}
 #footer .widget .widget-title {margin-top: 0;font-size: 13px;letter-spacing: 1px;}
-#footer #footer-main {padding-top:3rem;padding-bottom:3rem; }
+#footer #footer-main {padding-top:3rem;padding-bottom:3rem;  background-image: url("../img/banner/Banner.jpg"); }
 #footer #footer-main.container-fullwidth {padding-left: 130px;padding-right: 130px;}
 #footer #footer-bottom {
   padding-top: 1rem;

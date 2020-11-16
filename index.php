@@ -814,42 +814,42 @@
                         <select id="brand" class="form-control" data-container-class="input-lg" data-search="true">
                           <option value="">Select a Brand</option>
                           <option value="69"> <strong>-- ANY OTHER BRAND -- </strong></option>
-                          <option value="10"> ADIDAS</option>
-                          <option value="11">ALDO</option>
-                          <option value="12">Amazon</option>
-                          <option value="13">Armani UK</option>
-                          <option value="14">ASOS</option>
-                          <option value="15">Bershka</option>
-                          <option value="16">BOOHOO</option>
-                          <option value="17">Clarks</option>
-                          <option value="18">Debenhams</option>
-                          <option value="19">DuneLondon</option>
-                          <option value="20">GAP</option>
-                          <option value="21">GUCCI</option>
-                          <option value="22">H&M</option>
-                          <option value="23">Harrods</option>
-                          <option value="24">Lacoste</option>
-                          <option value="25">M&S</option>
-                          <option value="26">MANGO</option>
-                          <option value="27">Massimo Dutti</option>
-                          <option value="28">MotherCare</option>
-                          <option value="29">NastyGal</option>
-                          <option value="30">NEXT</option>
-                          <option value="31">Nike</option>
-                          <option value="32">Ralph Lauren</option>
-                          <option value="33">Reebok</option>
-                          <option value="34">RiverIsland</option>
-                          <option value="35">SelfRidges</option>
-                          <option value="36">SportsDirect</option>
-                          <option value="37">TedBaker</option>
-                          <option value="38">TkMaxx</option>
-                          <option value="39">TOPSHOP</option>
-                          <option value="40">UNDER ARMOUR</option>
-                          <option value="41">Urban Outfitters</option>
-                          <option value="42">Victoria's Secret</option>
-                          <option value="43">Weekday</option>
-                          <option value="44">ZALANDO</option>
-                          <option value="45">ZARA</option>
+                          <option value="21"> ADIDAS</option>
+                          <option value="">ALDO</option>
+                          <option value="22">Amazon</option>
+                          <option value="">Armani UK</option>
+                          <option value="31">ASOS</option>
+                          <option value="">Bershka</option>
+                          <option value="32">BOOHOO</option>
+                          <option value="23">Clarks</option>
+                          <option value="33">Debenhams</option>
+                          <option value="34">DuneLondon</option>
+                          <option value="24">GAP</option>
+                          <option value="">GUCCI</option>
+                          <option value="">H&M</option>
+                          <option value="">Harrods</option>
+                          <option value="">Lacoste</option>
+                          <option value="35">M&S</option>
+                          <option value="50">MANGO</option>
+                          <option value="">Massimo Dutti</option>
+                          <option value="39">MotherCare</option>
+                          <option value="">NastyGal</option>
+                          <option value="25">NEXT</option>
+                          <option value="">Nike</option>
+                          <option value="26">Ralph Lauren</option>
+                          <option value="27">Reebok</option>
+                          <option value="36">RiverIsland</option>
+                          <option value="">SelfRidges</option>
+                          <option value="37">SportsDirect</option>
+                          <option value="">TedBaker</option>
+                          <option value="">TkMaxx</option>
+                          <option value="38">TOPSHOP</option>
+                          <option value="29">UNDER ARMOUR</option>
+                          <option value="">Urban Outfitters</option>
+                          <option value="">Victoria's Secret</option>
+                          <option value="">Weekday</option>
+                          <option value="28">ZALANDO</option>
+                          <option value="">ZARA</option>
 
                         </select>
                       </div>
@@ -902,10 +902,12 @@
                 </div>
             </div>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <button type="submit" id="submit-form" class="btn btn-lg btn-important btn-primary btn-block" style="width: 40%">Add to Cart</button>
+            <div style="margin-top: 20px">
+              <button type="submit" style="background-color: #EE3158 !important;" id="submit-form" class="btn btn-lg btn-important btn-primary btn-block" style="width: 40%">Generate Invoice</button>
+            </div>
           </div>
           </form>
-          <p class="m-t-20">Already have an account? <a href="login-image.html"><strong>Login</strong></a></p>
+          <!-- <p class="m-t-20">Already have an account? <a href="login-image.html"><strong>Login</strong></a></p> -->
         </div>
       </div>
     </div>
@@ -1337,20 +1339,28 @@
     function check() {
       var data = new FormData();
       var brand = document.getElementById("brand").value
-      data.append("brand",document.getElementById("brand").value)
+      data.append("brand", document.getElementById("brand").value)
       data.append("url", document.getElementById("url").value);
-      
+
+      $("#urlerror").empty(".test")
+
       var xhr = new XMLHttpRequest();
       xhr.open("POST", "form.php");
 
       xhr.onload = function() {
         console.log(this.response)
         var formdata = JSON.parse(this.response)
-        console.log(formdata.urlerror)
-        if (formdata.urlerror != null) {
+        // console.log(formdata.urlerror)
+        // if (formdata.urlerror != null) {
+        //   $("#urlerror").append(
+        //     `<p>${formdata.urlerror}</p>`);
+        // }
+        if (formdata.urlcheck != "Okay") {
+
+          console.log(formdata.urlcheck)
           $("#urlerror").append(
-            `<p>${formdata.urlerror}</p>`);
-        };
+            `<p class="test">${formdata.urlcheck}</p>`);
+        }
 
       };
       // console.log("jj");
