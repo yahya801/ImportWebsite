@@ -255,6 +255,12 @@
               </ul>
             </div>
           </div>
+
+          <div id="alert" class="alert" style="display: none;width: auto;background-color: black; height: auto;">
+            <span class="closebtn" style="height:10px" onclick="this.parentElement.style.display='none';">&times;</span>
+            The form has an issue wiht the URL or brandname
+          </div>
+
         </div>
       </div>
       <!-- END MAIN NAVIGATION -->
@@ -317,6 +323,10 @@
         </div>
       </div>
       <!-- END REVOLUTION SLIDER -->
+      <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        This is an alert box.
+      </div>
       <!-- BEGIN FEATURES -->
       <section class="section img-cover" data-bg-img="ecommerce/full-4.jpg" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -150px;">
         <div class="container">
@@ -798,12 +808,12 @@
       <!-- <?php include 'form.php' ?> -->
       <!-- Form  -->
       <div class="section container">
-        <div class="row">
+        <div class="row" style="width: 80%;margin: auto;">
           <div class="title title-center m-b-10">
             <h3>Signup to our Newsletter</h3>
             <p class="subtitle">Receive latest news and exclusive offers</p>
           </div>
-          <div class="col-lg-6 col-md-8 col-xs-10 offset-lg-3 offset-md-2 offset-xs-1">
+          <div>
             <div class="m-b-100">
               <form onsubmit="return check()" method="POST" class="form-register">
                 <div>
@@ -812,44 +822,44 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <select id="brand" class="form-control" data-container-class="input-lg" data-search="true">
-                          <option value="">Select a Brand</option>
+                          <option value="15">Select a Brand</option>
                           <option value="69"> <strong>-- ANY OTHER BRAND -- </strong></option>
                           <option value="21"> ADIDAS</option>
-                          <option value="">ALDO</option>
+                          <option value="41">ALDO</option>
                           <option value="22">Amazon</option>
-                          <option value="">Armani UK</option>
+                          <option value="42">Armani UK</option>
                           <option value="31">ASOS</option>
-                          <option value="">Bershka</option>
+                          <option value="43">Bershka</option>
                           <option value="32">BOOHOO</option>
                           <option value="23">Clarks</option>
                           <option value="33">Debenhams</option>
                           <option value="34">DuneLondon</option>
                           <option value="24">GAP</option>
-                          <option value="">GUCCI</option>
-                          <option value="">H&M</option>
-                          <option value="">Harrods</option>
-                          <option value="">Lacoste</option>
+                          <option value="44">GUCCI</option>
+                          <option value="45">H&M</option>
+                          <option value="46">Harrods</option>
+                          <option value="47">Lacoste</option>
                           <option value="35">M&S</option>
-                          <option value="50">MANGO</option>
-                          <option value="">Massimo Dutti</option>
+                          <option value="48">MANGO</option>
+                          <option value="49">Massimo Dutti</option>
                           <option value="39">MotherCare</option>
-                          <option value="">NastyGal</option>
+                          <option value="50">NastyGal</option>
                           <option value="25">NEXT</option>
-                          <option value="">Nike</option>
+                          <option value="51">Nike</option>
                           <option value="26">Ralph Lauren</option>
                           <option value="27">Reebok</option>
                           <option value="36">RiverIsland</option>
-                          <option value="">SelfRidges</option>
+                          <option value="52">SelfRidges</option>
                           <option value="37">SportsDirect</option>
-                          <option value="">TedBaker</option>
-                          <option value="">TkMaxx</option>
+                          <option value="53">TedBaker</option>
+                          <option value="54">TkMaxx</option>
                           <option value="38">TOPSHOP</option>
                           <option value="29">UNDER ARMOUR</option>
-                          <option value="">Urban Outfitters</option>
-                          <option value="">Victoria's Secret</option>
-                          <option value="">Weekday</option>
+                          <option value="55">Urban Outfitters</option>
+                          <option value="56">Victoria's Secret</option>
+                          <option value="57">Weekday</option>
                           <option value="28">ZALANDO</option>
-                          <option value="">ZARA</option>
+                          <option value="58">ZARA</option>
 
                         </select>
                       </div>
@@ -878,33 +888,40 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group required">
-                    <input type="text" value="<?php echo htmlspecialchars($name); ?>" id="url" class="form-control input-lg" placeholder="Paste products link form brand's website">
-                    <span class="error" id="urlerror">*</span>
+                  <div class="form-group">
+                    <input type="text" id="url" class="form-control input-lg" placeholder="Paste products link form brand's website" required>
+                    <!-- <span class="error" id="urlerror">*</span> -->
 
                   </div>
-                  <div class="row1" style="margin-left: -15px; margin-right: -15px;">
-                    <div class="col-sm-3 ">
-                      <div class="prepend-icon">
-                        <input type="number" class="form-control input-lg" placeholder="QTY">
-                      </div>
+                  <div class="row">
+                    <div class="col-sm-3">
+
+                      <input type="number" class="form-control input-lg" placeholder="Qty">
+
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control input-lg">
+                      <input type="text" class="form-control input-lg" placeholder="Size">
+                    </div>
+
+                    <div class="col-sm-3">
+                      <input type="text" class="form-control input-lg " placeholder="Color">
+                    </div>
+                    <div class="col-sm-3">
+                      <input type="text" class="form-control input-lg" placeholder="Price">
                     </div>
                   </div>
-                  <div class="col-sm-3">
-                    <input type="text" class="form-control input-lg " placeholder="Color">
-                  </div>
-                  <div class="col-sm-3">
-                    <input type="text" class="form-control input-lg" placeholder="Price">
-                  </div>
                 </div>
-            </div>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <div style="margin-top: 20px">
+                <div  style="margin-top: 4%">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div style="margin-top: 2%">
               <button type="submit" style="background-color: #EE3158 !important;" id="submit-form" class="btn btn-lg btn-important btn-primary btn-block" style="width: 40%">Generate Invoice</button>
             </div>
+            </div>
+            <div>
+
+            </div>
+            
           </div>
           </form>
           <!-- <p class="m-t-20">Already have an account? <a href="login-image.html"><strong>Login</strong></a></p> -->
@@ -1343,6 +1360,8 @@
       data.append("url", document.getElementById("url").value);
 
       $("#urlerror").empty(".test")
+      console.log(document.getElementById("brand").value)
+
 
       var xhr = new XMLHttpRequest();
       xhr.open("POST", "form.php");
@@ -1358,8 +1377,19 @@
         if (formdata.urlcheck != "Okay") {
 
           console.log(formdata.urlcheck)
-          $("#urlerror").append(
-            `<p class="test">${formdata.urlcheck}</p>`);
+          // $("#urlerror").append(
+          //   `<p class="test">${formdata.urlcheck}</p>`);
+          var x = document.getElementById("alert");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        } else {
+          var x = document.getElementById("alert");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          }
         }
 
       };
