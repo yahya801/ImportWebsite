@@ -37,6 +37,7 @@
   <link rel="stylesheet" href="assets/css/themes.css" />
   <link rel="stylesheet" href="assets/css/ui.css" />
   <link rel="stylesheet" href="assets/css/widgets.css" />
+  <link rel="stylesheet" href="assets/css/accordion.css" />
   <script src="assets/js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
 </head>
@@ -416,393 +417,7 @@
       <!-- END LOGOS CAROUSEL -->
 
 
-      <!-- BEGIN CATEGORIES -->
-      <!-- <section id="categories" class="m-10 m-b-0">
-          <div class="masonry grid grid-4">
-            <div class="item item-wide item-tall">
-              <div class="item-wrapper">
-                <a href="shop-sidebar-left.html">
-                  <figure class="he-center black-white-effect">
-                    <img src="assets/img/ecommerce/cat-jackets.jpg" alt="jackets" />
-                    <figcaption>
-                      <h2 class="t-important t-center"><span>Jacket</span></h2>
-                      <p class="category-desc">78 products</p>
-                    </figcaption>
-                  </figure>
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-wrapper">
-                <a href="shop-sidebar-left.html">
-                  <figure class="he-center black-white-effect">
-                    <img src="assets/img/ecommerce/cat-shoes.jpg" alt="shoes" />
-                    <figcaption>
-                      <h2 class="t-important t-center"><span>Shoes</span></h2>
-                      <p class="category-desc">78 products</p>
-                    </figcaption>
-                  </figure>
-                </a>
-              </div>
-            </div>
-            <div class="item item-tall">
-              <div class="item-wrapper">
-                <a href="shop-sidebar-left.html">
-                  <figure class="he-center black-white-effect">
-                    <img src="assets/img/ecommerce/cat-dresses.jpg" alt="dresses" />
-                    <figcaption>
-                      <h2 class="t-important t-center"><span>Dresses</span></h2>
-                      <p class="category-desc">84 products</p>
-                    </figcaption>
-                  </figure>
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-wrapper">
-                <a href="shop-sidebar-left.html">
-                  <figure class="he-center black-white-effect">
-                    <img src="assets/img/ecommerce/cat-shirts.jpg" alt="shirts" />
-                    <figcaption>
-                      <h2 class="t-important t-center"><span>Shirts</span></h2>
-                      <p class="category-desc">189 products</p>
-                    </figcaption>
-                  </figure>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section> -->
 
-      <!-- END CATEGORIES -->
-
-      <!-- BEGIN NEW PRODUCTS -->
-      <!-- <section class="section">
-          <div class="container">
-            <div class="title title-center">
-              <h3>New Arrivals</h3>
-              <p class="subtitle">Discover our latest collection</p>
-            </div>
-            <div class="owl-carousel owl-theme product-carousel" data-items-desktop="4" data-items-tablet="3" data-plugin-options='{"margin":20,"startPosition":1}'>
-              <div class="item">
-                <div class="product">
-                  <div class="product-img">
-                    <ul class="product-wrapper">
-                      <li class="selected">
-                        <a href="shop-single.html">
-                          <img src="assets/img/ecommerce/shirt.png" alt="Preview image">
-                        </a>
-                      </li>
-                      <li class="move-right" data-sale="true" data-price="$22.95">
-                        <a href="shop-single.html">
-                          <img src="assets/img/ecommerce/shirt-2.png" alt="Preview image">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="shop-single.html">
-                          <img src="assets/img/ecommerce/shirt-3.png" alt="Preview image">
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product-overlay">
-                    <div class="overlay-content">
-                      <div class="row">
-                        <div class="col-md-6 product-quickview">
-                          <a href="include/ajax-ecommerce/quickview-shirts.html">
-                            <i class="nc-icon-outline ui-1_eye-17" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Quickview</p>"></i>
-                          </a>
-                        </div>
-                        <div class="col-md-6 product-wishlist">
-                          <i class="fa fa-heart-o" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Add to Wishlist</p>"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-info">
-                    <p class="product-name"><a href="shop-single-variable-2.html">Cotton Shirts</a></p>
-                    <p class="product-price">$26.85</p>
-                  </div>
-                  <div class="product-info">
-                    <div class="product-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half-o"></i>
-                    </div>
-                    <a href="#" class="add-to-cart" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<p>Add to Cart</p>">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="product">
-                  <div class="product-img">
-                    <ul class="product-wrapper">
-                      <li class="selected">
-                        <img src="assets/img/ecommerce/sunglasses-2-1.png" alt="Preview image">
-                      </li>
-                      <li class="move-right" data-sale="true" data-price="$22.95">
-                        <img src="assets/img/ecommerce/sunglasses-2-2.png" alt="Preview image">
-                      </li>
-                      <li>
-                        <img src="assets/img/ecommerce/sunglasses-2-3.png" alt="Preview image">
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product-overlay">
-                    <div class="overlay-content">
-                      <div class="row">
-                        <div class="col-md-6 product-quickview">
-                          <a href="include/ajax-ecommerce/quickview-sunglasses.html">
-                            <i class="nc-icon-outline ui-1_eye-17" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Quickview</p>"></i>
-                          </a>
-                        </div>
-                        <div class="col-md-6 product-wishlist">
-                          <i class="fa fa-heart-o" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Add to Wishlist</p>"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-info">
-                    <p class="product-name"><a href="shop-single-variable-2.html">Sunglasses</a></p>
-                    <p class="product-price">$142.70</p>
-                  </div>
-                  <div class="product-info">
-                    <div class="product-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half-o"></i>
-                    </div>
-                    <a href="#" class="add-to-cart" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<p>Add to Cart</p>">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="product">
-                  <div class="product-img">
-                    <ul class="product-wrapper">
-                      <li class="selected">
-                        <img src="assets/img/ecommerce/shoes.png" alt="Preview image">
-                      </li>
-                      <li class="move-right">
-                        <img src="assets/img/ecommerce/shoes-2.png" alt="Preview image">
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product-overlay">
-                    <div class="overlay-content">
-                      <div class="row">
-                        <div class="col-md-6 product-quickview">
-                          <a href="include/ajax-ecommerce/quickview-shoes.html">
-                            <i class="nc-icon-outline ui-1_eye-17" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Quickview</p>"></i>
-                          </a>
-                        </div>
-                        <div class="col-md-6 product-wishlist">
-                          <i class="fa fa-heart-o" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Add to Wishlist</p>"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-info">
-                    <p class="product-name"><a href="shop-single-variable-2.html">Fashion Shoes</a></p>
-                    <p class="product-price">$125.90</p>
-                  </div>
-                  <div class="product-info">
-                    <div class="product-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                    </div>
-                    <a href="#" class="add-to-cart" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<p>Add to Cart</p>">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="product">
-                  <div class="product-img">
-                    <ul class="product-wrapper">
-                      <li class="selected">
-                        <img src="assets/img/ecommerce/shoes-men.png" alt="Preview image">
-                      </li>
-                      <li class="move-right">
-                        <img src="assets/img/ecommerce/shoes-men-2.png" alt="Preview image">
-                      </li>
-                      <li>
-                        <img src="assets/img/ecommerce/shoes-men-3.png" alt="Preview image">
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product-overlay">
-                    <div class="overlay-content">
-                      <div class="row">
-                        <div class="col-md-6 product-quickview">
-                          <a href="include/ajax-ecommerce/quickview-shoes-men.html">
-                            <i class="nc-icon-outline ui-1_eye-17" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Quickview</p>"></i>
-                          </a>
-                        </div>
-                        <div class="col-md-6 product-wishlist">
-                          <i class="fa fa-heart-o" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Add to Wishlist</p>"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-info">
-                    <p class="product-name"><a href="shop-single-variable-2.html">Leather Shoes</a></p>
-                    <p class="product-price">$142.70</p>
-                  </div>
-                  <div class="product-info">
-                    <div class="product-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half-o"></i>
-                    </div>
-                    <a href="#" class="add-to-cart" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<p>Add to Cart</p>">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="product">
-                  <div class="product-img">
-                    <ul class="product-wrapper">
-                      <li class="selected">
-                        <img src="assets/img/ecommerce/sunglasses-1-1.png" alt="Preview image">
-                      </li>
-                      <li class="move-right" data-sale="true" data-price="$22.95">
-                        <img src="assets/img/ecommerce/sunglasses-1-2.png" alt="Preview image">
-                      </li>
-                      <li>
-                        <img src="assets/img/ecommerce/sunglasses-1-3.png" alt="Preview image">
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product-overlay">
-                    <div class="overlay-content">
-                      <div class="row">
-                        <div class="col-md-6 product-quickview">
-                          <a href="include/ajax-ecommerce/quickview-sunglasses.html">
-                            <i class="nc-icon-outline ui-1_eye-17" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Quickview</p>"></i>
-                          </a>
-                        </div>
-                        <div class="col-md-6 product-wishlist">
-                          <i class="fa fa-heart-o" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Add to Wishlist</p>"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-info">
-                    <p class="product-name"><a href="shop-single-variable-2.html">Sunglasses</a></p>
-                    <p class="product-price">$142.70</p>
-                  </div>
-                  <div class="product-info">
-                    <div class="product-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half-o"></i>
-                    </div>
-                    <a href="#" class="add-to-cart" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<p>Add to Cart</p>">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="product">
-                  <div class="product-img">
-                    <ul class="product-wrapper">
-                      <li class="selected">
-                        <img src="assets/img/ecommerce/sunglasses-2-1.png" alt="Preview image">
-                      </li>
-                      <li class="move-right" data-sale="true" data-price="$22.95">
-                        <img src="assets/img/ecommerce/sunglasses-2-2.png" alt="Preview image">
-                      </li>
-                      <li>
-                        <img src="assets/img/ecommerce/sunglasses-2-3.png" alt="Preview image">
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product-overlay">
-                    <div class="overlay-content">
-                      <div class="row">
-                        <div class="col-md-6 product-quickview">
-                          <a href="include/ajax-ecommerce/quickview-sunglasses.html">
-                            <i class="nc-icon-outline ui-1_eye-17" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Quickview</p>"></i>
-                          </a>
-                        </div>
-                        <div class="col-md-6 product-wishlist">
-                          <i class="fa fa-heart-o" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Add to Wishlist</p>"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-info">
-                    <p class="product-name"><a href="shop-single-variable-2.html">Sunglasses</a></p>
-                    <p class="product-price">$142.70</p>
-                  </div>
-                  <div class="product-info">
-                    <div class="product-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half-o"></i>
-                    </div>
-                    <a href="#" class="add-to-cart" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<p>Add to Cart</p>">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="product">
-                  <div class="product-img">
-                    <ul class="product-wrapper">
-                      <li class="selected">
-                        <img src="assets/img/ecommerce/shoes.png" alt="Preview image">
-                      </li>
-                      <li class="move-right" data-sale="true" data-price="$21.20">
-                        <img src="assets/img/ecommerce/shoes-2.png" alt="Preview image">
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="product-overlay">
-                    <div class="overlay-content">
-                      <div class="row">
-                        <div class="col-md-6 product-quickview">
-                          <a href="include/ajax-ecommerce/quickview-shoes.html">
-                            <i class="nc-icon-outline ui-1_eye-17" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Quickview</p>"></i>
-                          </a>
-                        </div>
-                        <div class="col-md-6 product-wishlist">
-                          <i class="fa fa-heart-o" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>Add to Wishlist</p>"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-info">
-                    <p class="product-name"><a href="shop-single-variable-2.html">Shoes</a></p>
-                    <p class="product-price">$125.90</p>
-                  </div>
-                  <div class="product-info">
-                    <div class="product-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                    </div>
-                    <a href="#" class="add-to-cart" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<p>Add to Cart</p>">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
-      <!-- END NEW PRODUCTS -->
       <!-- BEGIN REGISTER -->
 
       <!-- <?php include 'form.php' ?> -->
@@ -815,7 +430,7 @@
           </div>
           <div>
             <div class="m-b-100">
-              <form onsubmit="return check()" method="POST" class="form-register">
+              <form id="myform" onsubmit="return check()" method="POST" class="form-register">
                 <div>
 
                   <div class="row">
@@ -867,8 +482,8 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <div class="prepend-icon">
-                          <select class="form-control" data-container-class="input-lg" data-search="true">
-                            <option value="">Select Shipping</option>
+                          <select id="shipping" class="form-control" data-container-class="input-lg" data-search="true">
+                            <option value="16">Select Shipping</option>
                             <option value="51"> Rs800 each Shirt/Top/Undergarment/Jewellery/Accessory</option>
                             <option value="52"> Rs1200 each Trouser/Jeans/Sweater/Jumper</option>
                             <option value="53"> Rs3500 each Jacket/Blazer/Hoodie - Light weight</option>
@@ -896,186 +511,88 @@
                   <div class="row">
                     <div class="col-sm-3">
 
-                      <input type="number" class="form-control input-lg" placeholder="Qty">
+                      <input min="1" max="10" id="qty" type="number" class="form-control input-lg" placeholder="Qty" required>
 
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control input-lg" placeholder="Size">
+                      <input id="size" type="text" class="form-control input-lg" placeholder="Size">
                     </div>
 
                     <div class="col-sm-3">
-                      <input type="text" class="form-control input-lg " placeholder="Color">
+                      <input id="color" type="text" class="form-control input-lg " placeholder="Color">
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control input-lg" placeholder="Price">
+                      <input id="price" type="text" class="form-control input-lg" placeholder="£" required>
                     </div>
                   </div>
                 </div>
-                <div  style="margin-top: 4%">
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div style="margin-top: 4%">
+                  <textarea placeholder="Any Special Requests" id="request" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <div style="margin-top: 2%">
-              <button type="submit" style="background-color: #EE3158 !important;" id="submit-form" class="btn btn-lg btn-important btn-primary btn-block" style="width: 40%">Generate Invoice</button>
-            </div>
+                  <button type="submit" style="background-color: #EE3158 !important;" id="submit-form" class="btn btn-lg btn-important btn-primary btn-block" style="width: 40%">Generate Invoice</button>
+                </div>
             </div>
             <div>
 
             </div>
-            
+
           </div>
           </form>
           <!-- <p class="m-t-20">Already have an account? <a href="login-image.html"><strong>Login</strong></a></p> -->
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- </section> -->
-  <!-- </div> -->
-  <!-- </section> -->
-  <!-- END REGISTER -->
-  <!-- BEGIN NEWSLETTER -->
-  <!-- <section class="section section-newsletter t-center img-light" data-bg-img="ecommerce/full-4.jpg" data-start="background-position:0px 40px;" data-end="background-position:0px -150px;">
-          <div class="container">
-            <div class="row">
-              <div class="title title-center m-b-10">
-                <h3>Signup to our Newsletter</h3>
-                <p class="subtitle">Receive latest news and exclusive offers</p>
+        <!-- <div class=" section container"> -->
+        <div class="row" style="width: 80%;margin: auto;">
+          <button class="btn btn-lg btn-important btn-primary btn-block accordion" style="background-color: #EE3158 !important;">Invoice</button>
+          <div class="panel" id="invoice">
+            <div>
+              <label>Select Shipping: </label>
+              <select id="delivery">
+                <option value="110">10% on Cash on Delivery</option>
+
+                <option value="100">0% on Bank Transfer</option>
+              </select>
+            </div>
+            <table id="producttable" class="table table-cart">
+              <tbody>
+                <tr>
+                  <!-- <td>Brand</td> -->
+                  <td> Product Details</td>
+                  <td>Price</td>
+                  <td></td>
+                </tr>
+
+              </tbody>
+            </table>
+            <div id="charges">
+              <div>
+                <h3> Service Charges: </h3>
               </div>
-              <form class="form-inline">
-                <div class="form-group">
-                  <input type="email" class="form-control input-lg" placeholder="Your email address">
-                </div>
-                <a href="#" class="btn btn-lg btn-square btn-dark">Subscribe</a>
-              </form>
-            </div>
-          </div>
-        </section> -->
-  <!-- END NEWSLETTER -->
-
-  <!-- BEGIN PRODUCTS EXTENDED -->
-  <!-- <div class="container-fluid">
-          <div class="row extended-product extended-third">
-            <div class="col-lg-4 col-md-6 extended-product-img animated" data-animation="fadeIn" data-animation-delay="200">
-              <div class="extended-product-img-wrapper img-cover" data-bg-img="ecommerce/bag.html"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 extended-product-desc animated" data-animation="fadeIn" data-animation-delay="400">
-              <div class="extended-product-desc-wrapper">
-                <div class="product-single brown lighten-5">
-                  <div class="product-name"><a href="shop-single.html">Women's leather bag</a></div>
-                  <div class="product-quick-desc">High quality product</div>
-                  <div class="product-top-info clearfix">
-                    <div class="product-price">$69.95</div>
-                    <div class="product-rating">
-                      <div class="rating" data-value="4" data-read-only="true"></div>
-                      <a href="shop-single.html">1 review</a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-10 offset-md-1">
-                      <img src="assets/img/ecommerce/bag-4.png" data-src="assets/img/ecommerce/bag-4.png" alt="bag" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="t-center">
-                    <p>Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta tamque multiplici fertilitate abundat rerum
-                      omnium eadem Cyprus.</p>
-                    <a href="#" class="add-to-cart btn btn-dark btn-rounded btn-bordered btn-lg icon-left-effect"><i class="nc-icon-outline shopping_cart"></i><span>Add to Cart</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 extended-product-img hidden-md-down animated" data-animation="fadeIn" data-animation-delay="600">
-              <div class="extended-product-img-wrapper img-cover" data-bg-img="ecommerce/bag-4-2.html"></div>
-            </div>
-          </div>
-        </div> -->
-  <!-- END PRODUCTS EXTENDED -->
-
-
-
-  <!-- BEGIN TESTIMONIALS -->
-  <!-- <section class="section section-dark" data-bg-img="banner/testimonial.jpg" data-start="background-position:0px 0px;" data-top-bottom="background-position:0px -220px;">
-          <div class="container">
-            <div class="row">
-              <div class="title title-center m-b-0">
-                <h3>Testimonials</h3>
-                <p class="subtitle">What our clients say about us</p>
-              </div>
-              <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 animated" data-animation="fadeIn" data-animation-delay="200">
-                <div class="review_top_ornament ornament-light">
-                  <div class="review_top_ornament_line"></div>
-                  <div class="review_top_ornament_quotemark">„</div>
-                  <div class="review_top_ornament_line"></div>
-                </div>
-                <div class="bx-slider" data-plugin-options='{"pagerCustom":"#testimonials-pager","pager":true,"mode":"fade"}'>
-                  <div class="testimonial">
-                    <p class="comment">
-                      Hi, Just wanted to drop a note of thanks. We are so happy with this theme. Everyday it make our lives better. Your service and commitment to constant improvement is a breath of fresh air in our culture today. Thank you.
-                    </p>
-                    <h5 class="happy-client">Web Manager – Bryan Potter</h5>
-                    <span class="client-info">Cameron Texas</span>
-                  </div>
-                  <div class="testimonial">
-                    <p class="comment">
-                      This is the best theme I’ve ever utilized. Other systems may be bigger, and certainly more expensive, but it is hands down the best theme I have ever used.<br> Thanks a lot!
-                    </p>
-                    <h5 class="happy-client">Webdesigner – Martin Enriquez</h5>
-                    <span class="client-info">Colorado</span>
-                  </div>
-                  <div class="testimonial">
-                    <p class="comment">
-                      I want to wish you well throughout this holiday season. Only good health, food and friends should be in store for you. This has been an eventful year for me and the highlight has been the introduction of this theme in my working life.
-                    </p>
-                    <h5 class="happy-client">Webmaster – Angela Cane</h5>
-                    <span class="client-info">Jacksonville Florida</span>
-                  </div>
-                </div>
-                <div class="review_bottom_ornament ornament-light">
-                  <div class="review_bottom_ornament_line"></div>
-                  <div class="review_bottom_ornament_triangle"></div>
-                  <div class="review_bottom_ornament_line"></div>
-                </div>
-                <div id="testimonials-pager" class="testimonial-photos">
-                  <a data-slide-index="0" href="#" class="photo-hold">
-                    <img src="assets/img/ecommerce/people-1.jpg" alt="people 1" />
-                  </a>
-                  <a data-slide-index="1" href="#" class="photo-hold">
-                    <img src="assets/img/ecommerce/people-2.jpg" alt="people 2" />
-                  </a>
-                  <a data-slide-index="2" href="#" class="photo-hold">
-                    <img src="assets/img/ecommerce/people-3.jpg" alt="people 3" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
-  <!-- END TESTIMONIALS -->
-
-
-  </div>
-  <!-- END MAIN CONTENT -->
-
-  <!-- BEGIN MODAL NEWSLETTER -->
-  <!-- <div class="slickModal newsletter" data-plugin-options='{"popupType":"delayed","setCookie":true,"cookieName":"cookieNewsletter","windowWidth":"600px","windowHeight":"285px","windowLocation":"center","windowTransitionEffect":"zoomIn","closeButton":"icon","reopenClass":"open-modal-newsletter"}'>
-        <div class="window modal-lg">
-          <div class="wrapper bg-cover" data-bg-img="ecommerce/nature.html">
-            <div class="row">
-              <div class="col-md-8">
-                <h3>Get fresh daily news!</h3>
-                <p>Receive latest news and exclusive offers.</p>
-                <form class="m-t-30">
-                  <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Your email address...">
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-square btn-block">SIGN ME UP</button>
-                </form>
-                <a href="#" class="privacy">Privacy Policy</a>
+              <div>
+                <h3>Grand Total: </h3>
               </div>
             </div>
           </div>
         </div>
-      </div> -->
-  <!-- END MODAL NEWSLETTER -->
+      </div>
+      <!-- </div> -->
+    </div>
+  </div>
+
+
+  <!-- begin invoice -->
+
+
+  </div>
+
+
+
+
+
+
+  <!-- END MAIN CONTENT -->
+
+
 
   <!-- BEGIN FOOTER -->
   <footer id="footer">
@@ -1105,72 +622,6 @@
             </ul>
           </div>
         </div>
-        <!-- <div class="col-lg-3 col-md-6 hidden-md-down">
-              <div class="widget widget-testimonials">
-                <h3 class="widget-title">Last Testimonials</h3>
-                <div class="owl-carousel owl-theme" data-items-desktop="1" data-items-tablet="1" data-plugin-options='{"nav":false,"dots":true,"smartSpeed":1000,"autoplayTimeout":5000,"autoplay":true,"loop":true,"items":1,"margin":10}'>
-                  <div class="item">
-                    <div class="testimonial">
-                      <div class="testimonial-content">Hac ita persuasione reducti intra moenia bellatores obseratis undique portarum aditibus set interius, multitudine et lapidum.</div>
-                      <div class="testimonial-meta">
-                        <div class="testimonial-info">
-                          <p class="testimonial-name">John Doe, client</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="testimonial">
-                      <div class="testimonial-content">Ergo ego senator inimicus, si ita vultis, homini, amicus esse me tandem iure reprehen det, consiliorum factorum censuerim petenda.</div>
-                      <div class="testimonial-meta">
-                        <div class="testimonial-info">
-                          <p class="testimonial-name">Stephan Amiel, client</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="testimonial">
-                      <div class="testimonial-content">Hac ita persuasione reducti intra moenia bellatores obseratis undique portarum aditibus set interius, multitudine missilium lapidum.</div>
-                      <div class="testimonial-meta">
-                        <div class="testimonial-info">
-                          <p class="testimonial-name">Mike Meyers, client</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-        <!-- <div class="col-lg-3 col-md-6 hidden-md-down">
-              <div class="widget widget-products">
-                <h3 class="widget-title">Popular Products</h3>
-                <div class="media product p-t-0">
-                  <div class="pull-left">
-                    <a href="shop-single-fullwidth.html"> <img src="assets/img/ecommerce/color-shoes-4.jpg" alt="shoes" class="img-fluid"> </a>
-                  </div>
-                  <div class="media-body">
-                    <a class="product-title" href="shop-single-fullwidth.html">Leather Shoes</a>
-                    <div class="product-info"> <span class="product-price">$35.45</span> <span class="product-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> </span> </div>
-                  </div>
-                </div>
-                <div class="media product">
-                  <div class="pull-left">
-                    <a href="shop-single-fullwidth.html"> <img src="assets/img/ecommerce/color-hat.jpg" alt="hat" class="img-fluid"> </a>
-                  </div>
-                  <div class="media-body">
-                    <a class="product-title" href="shop-single-fullwidth.html">Classic Black Hat</a>
-                    <div class="product-info"> <span class="product-price">$42.25</span> <span class="product-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </span> </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-        <!-- <div class="col-lg-3 col-md-6">
-              <div class="widget widget-video">
-                <h3 class="widget-title">Product Video</h3>
-                <div class="video-embed"> <iframe src="https://player.vimeo.com/video/76329225?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" allowfullscreen></iframe> </div>
-              </div>
-            </div> -->
       </div>
     </div>
     <div id="footer-bottom">
@@ -1195,95 +646,7 @@
 
   </div>
 
-  <!-- BEGIN OFF FULLSCREEN SEARCH -->
-  <!-- <div class="search-overlay overlay-dark">
-      <a href="#" class="search-overlay-close"><i class="nc-icon-outline ui-1_simple-remove"></i></a>
-      <form action="http://themes-lab.com/engage/search-result" method="post">
-        <input type="search" placeholder="Search...">
-        <button type="submit"><i class="nc-icon-outline ui-1_zoom-split"></i></button>
-      </form>
-    </div> -->
-  <!-- END OFF FULLSCREEN SEARCH -->
 
-  <!-- BEGIN BUILDER -->
-  <!-- <div class="builder hidden-sm-down" id="builder">
-      <a class="builder-toggle"><i class="nc-icon-outline ui-1_settings-gear-65"></i></a>
-      <div class="inner">
-        <div class="builder-container">
-          <div class="builder-section builder-buy">
-            <a href="#" class="btn btn-primary btn-block t-important">Buy Engage</a>
-            <a href="#" id="reset-style">reset style</a>
-          </div>
-          <div class="builder-section builder-layout">
-            <h4>Layout</h4>
-            <div class="btn btn-dark btn-bordered t-important" data-layout="boxed">BOXED</div>
-            <div class="btn btn-dark t-important" data-layout="wide">WIDE</div>
-  
-            <div class="builder-boxed-bg">
-              <h4>Boxed Background</h4>
-              <div class="row">
-                <div class="col-xs-12 custom-bg-background">
-                  <div class="boxed-bg" data-bg-img="bg/pattern/3.html"></div>
-                  <div class="boxed-bg" data-bg-img="bg/pattern/2.html"></div>
-                  <div class="boxed-bg" data-bg-img="creative/full-18.jpg" data-pattern="false"></div>
-                  <div class="boxed-bg" data-bg-img="creative/full-4.jpg" data-pattern="false"></div>
-                  <div class="boxed-bg" data-bg-img="nature/full-20.jpg" data-pattern="false"></div>
-                  <div class="boxed-bg" data-bg-img="nature/full-42.jpg" data-pattern="false"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="builder-section builder-menu-layout">
-            <h4>Menu Style</h4>
-            <div>
-              <a href="#" class="btn btn-dark btn-bordered t-important" data-menu="lateral">Lateral</a>
-              <a href="#" class="btn btn-dark btn-bordered t-important" data-menu="overlay">Overlay</a>
-            </div>
-            <div>
-              <a href="#" class="btn btn-dark btn-bordered t-important" data-menu="offcanvas">Offcanvas</a>
-              <a href="#" class="btn btn-dark t-important" data-menu="right-align">Right align</a>
-            </div>
-            <div>
-              <a href="#" class="btn btn-dark btn-bordered t-important" data-menu="left-align">Left align</a>
-              <a href="#" class="btn btn-dark btn-bordered t-important" data-menu="logo-center">Logo center</a>
-            </div>
-          </div>
-          <div class="builder-section builder-menu-style">
-            <h4>Menu Color</h4>
-            <div>
-              <a href="#" class="btn btn-dark t-important" data-menu-style="transparent">Transparent</a>
-              <a href="#" class="btn btn-dark btn-bordered t-important" data-menu-style="image">Image</a>
-              <a href="#" class="btn btn-dark btn-bordered t-important" data-menu-style="dark">Dark</a>
-              <a href="#" class="btn btn-dark btn-bordered t-important" data-menu-style="light">Light</a>
-            </div>
-          </div>
-          <div class="builder-section builder-footer">
-            <h4>Footer</h4>
-            <div class="btn btn-dark t-important" data-footer="normal">Normal</div>
-            <div class="btn btn-dark btn-bordered t-important" data-footer="reveal">Reveal</div>
-          </div>
-          <div class="builder-section builder-themes">
-            <h4>Theme Colors</h4>
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="theme-color blue lighten-2" data-theme="blue"></div>
-                <div class="theme-color indigo lighten-2" data-theme="indigo"></div>
-                <div class="theme-color deep-purple lighten-2" data-theme="purple"></div>
-                <div class="theme-color teal lighten-2" data-theme="teal"></div>
-                <div class="theme-color amber" data-theme="amber"></div>
-                <div class="theme-color deep-orange lighten-1 active" data-theme="default"></div>
-                <div class="theme-color red lighten-1" data-theme="red"></div>
-                <div class="theme-color grey darken-4" data-theme="dark"></div>
-              </div>
-            </div>
-          </div>
-          <div class="builder-section builder-dark-theme">
-            <div class="btn btn-dark btn-block t-important" data-skin="dark">Dark Theme</div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  <!-- END BUILDER -->
 
   <a href="#" class="scrollup">
     <i class="nc-icon-outline arrows-1_minimal-up"></i>
@@ -1353,32 +716,45 @@
   </script>
   <script src="jquery-3.5.1.min.js"></script>
   <script>
+    var item_brand = [];
+    var item_price = [];
+    var item_qty = []
+    var item_size = [];
+    var item_url = [];
+    var item_shipping = [];
+    var item_color = [];
+    var item_request = []
+
+    function incHeight() {
+      var el = document.getElementById("invoice");
+      var height = el.offsetHeight;
+      var newHeight = height + 200;
+      el.style.height = newHeight + 'px';
+    }
+
     function check() {
       var data = new FormData();
-      var brand = document.getElementById("brand").value
+      // var brand = document.getElementById("brand").value
       data.append("brand", document.getElementById("brand").value)
       data.append("url", document.getElementById("url").value);
-
-      $("#urlerror").empty(".test")
-      console.log(document.getElementById("brand").value)
-
-
+      data.append("shipping", document.getElementById("shipping").value)
+      data.append("qty", document.getElementById("qty").value)
+      data.append("size", document.getElementById("size").value)
+      data.append("color", document.getElementById("color").value)
+      data.append("price", document.getElementById("price").value)
+      data.append("request", document.getElementById("request").value)
+      var x = document.getElementById("alert");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      }
       var xhr = new XMLHttpRequest();
       xhr.open("POST", "form.php");
-
       xhr.onload = function() {
+        // console.log(this.response)
         console.log(this.response)
         var formdata = JSON.parse(this.response)
-        // console.log(formdata.urlerror)
-        // if (formdata.urlerror != null) {
-        //   $("#urlerror").append(
-        //     `<p>${formdata.urlerror}</p>`);
-        // }
         if (formdata.urlcheck != "Okay") {
-
-          console.log(formdata.urlcheck)
-          // $("#urlerror").append(
-          //   `<p class="test">${formdata.urlcheck}</p>`);
+          console.log(formdata)
           var x = document.getElementById("alert");
           if (x.style.display === "none") {
             x.style.display = "block";
@@ -1390,9 +766,57 @@
           if (x.style.display === "block") {
             x.style.display = "none";
           }
+
+
+          item_brand.push(formdata.brand)
+          item_shipping.push(formdata.shipping)
+          item_url.push(formdata.url)
+          item_price.push(formdata.price)
+          item_color.push(formdata.color)
+          item_size.push(formdata.size)
+          item_qty.push(formdata.quantity)
+          item_request.push(formdata.request)
+          $("#producttable").append("<tr class='cart-item'>" +
+            "<td>" + formdata.brand + "</td>" +
+            "<td><div>Quantity: " + formdata.quantity + "</div>" +
+            " <div class='product-price'> Price: £ " + formdata.price + "</div>" +
+            " Shipping: £ " + formdata.shipping + "</td>" +
+            "<td class='product-remove'> <i class='nc-icon-outline ui-1_circle-remove'></i></td>" +
+            "</tr>");
+          // console.log(item_brand)
+          console.log(formdata)
+          var elem = document.getElementById("invoice");
+          elem.scrollIntoView();
+
+          // incHeight()
+          document.getElementById("myform").reset();
+          var shipping_total = 0;
+          var price_total = 0;
+          var total_price = 0;
+          var grand_total = 0;
+          var i;
+          for (i = 0; i < item_shipping.length; i++) {
+            console.log(i)
+            shipping_total = shipping_total + item_shipping[i]
+            price_total = price_total + (item_qty[i] * item_price[i])
+
+
+          }
+          total_price = parseInt(shipping_total) + parseInt(price_total)
+          // console.log(item_shipping)
+          console.log(total_price, "shipping")
+          console.log(document.getElementById("delivery").value)
+          if (document.getElementById("delivery").value == 110) {
+            grand_total = total_price * 1.10
+          } else {
+            grand_total = total_price
+          }
+          console.log(grand_total)
         }
 
-      };
+      }
+      // invoiceopen()
+      // document.getElementById("invoice").style.clear= "both";
       // console.log("jj");
       xhr.send(data);
 
@@ -1400,6 +824,26 @@
       return false;
     }
   </script>
+  <script>
+    function invoiceopen() {
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      console.log(acc.length)
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          console.log("ll")
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    }
+  </script>
+
 </body>
 
 </html>

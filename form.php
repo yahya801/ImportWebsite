@@ -5,11 +5,11 @@ $url_check = "";
 $brand = "";
 
 $url = "";
-$parse = $parse2 = "";
-
+$parse = $parse2 = $shipping = $qty = $size = $color = $price = $request =  "";
+$DC = array(800,1200,3500,4500,800,2000,1000,5000,700,1500,2250,3000,6000,9000);
 // Use parse_url() function to parse the URL 
 // $parse = var_dump(parse_url($url)); 
-$urls = array("https://www.amazon.co.uk/", "https://www.aldoshoes.com/uk/en_UK");
+// $urls = array("https://www.amazon.co.uk/", "https://www.aldoshoes.com/uk/en_UK");
 
 $url_uk_domain = array("https://www.adidas.co.uk/", "https://www.amazon.co.uk/", "https://www.clarks.co.uk/", "https://www.gap.co.uk/", "https://www.next.co.uk/", "https://www.ralphlauren.co.uk/", "https://www.reebok.co.uk/", "https://www.zalando.co.uk/", "https://www.underarmour.co.uk/en-gb/");
 $url_global_domain = array("https://www.asos.com/", "https://www.boohoo.com/", "https://www.debenhams.com/", "https://www.dunelondon.com/", "https://www.marksandspencer.com/", "https://www.riverisland.com/", "https://www.sportsdirect.com/", "https://www.topshop.com/", "https://www.boots.com/mothercare");
@@ -21,11 +21,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $url = $_POST["url"];
         $brand = $_POST["brand"];
-        if($brand == 15){
-            $parse= "not okay";
+        $shipping = $_POST["shipping"];
+        $qty = $_POST["qty"];
+        $size = $_POST["size"];
+        $color = $_POST["color"];
+        $price = $_POST["price"];
+        $request = $_POST["request"];
+        if ($brand == 15 || $shipping == 16) {
+            $parse = "not okay";
             $parse2 = "okay";
-        }
-       else if ($brand > 20 && $brand <= 29) {
+        } else if ($brand > 20 && $brand <= 29) {
             $brand_mod =  $brand % 10 - 1;
             $parse = parse_url($url_uk_domain[$brand_mod], PHP_URL_HOST);
             $parse2 = parse_url($url, PHP_URL_HOST);
@@ -78,31 +83,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $parse2 = "okay";
                     }
                 }
-            }
-            else if($brand == 69){
+            } else if ($brand == 69) {
                 $parse = "okay";
                 $parse2 = "okay";
             }
 
-
-
-            // echo $oo;
-            // print_r($matches);
         }
 
         if ($parse == $parse2) {
             $url_check = "Okay";
+            $shipping_mod =  $shipping % 10 - 1;
+            if($shipping > 50 && $shipping < 60){
+                $shipping = $DC[$shipping_mod];
+                
+            }
+            elseif($shipping >= 60 && $shipping <= 64){
+                $shipping = $DC[$shipping_mod+10];
+            }
+            echo json_encode([
+                "parsed" => $url_check,
+                "urlcheck" => $url_check,
+                "brand" => $brand,
+                "shipping" => $shipping,
+                "quantity" => $qty,
+                "price" => $price,
+                "size" => $size,
+                "color" => $color,
+                "url" => $url,
+                "request" => $request
+            ]);
         } else {
             $url_check = "URL has an issue";
+            echo json_encode([
+                // "urlerror" => $urlerror,
+                "parsed" => $url_check,
+                "brand" => $brand,
+                "urlcheck" => $url_check
+            ]);
         }
     }
 }
-echo json_encode([
-    // "urlerror" => $urlerror,
-    "parsed" => $url_check,
-    "brand" => $brand,
-    "urlcheck" => $url_check
-]);
+
 // // if(empty($errorMSG)){
 // // 	$msg = "Name: ".$name ;
 // // 	echo json_encode(['code'=>200, 'msg'=>$msg]);
