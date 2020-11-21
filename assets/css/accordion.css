@@ -49,3 +49,6 @@
     /* display: flex; */
     /* flex-direction: row; */
 }
+.price{
+  text-align: end;
+}

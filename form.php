@@ -100,6 +100,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             elseif($shipping >= 60 && $shipping <= 64){
                 $shipping = $DC[$shipping_mod+10];
             }
+            if($size == null){
+                $size ="NA";
+            }
+            if($color == null){
+                $color = "NA";
+            }
+            if($request == null){
+                $request = "NA";
+            }
             echo json_encode([
                 "parsed" => $url_check,
                 "urlcheck" => $url_check,

@@ -541,35 +541,32 @@
           </form>
           <!-- <p class="m-t-20">Already have an account? <a href="login-image.html"><strong>Login</strong></a></p> -->
         </div>
-        <!-- <div class=" section container"> -->
-        <div class="row" style="width: 80%;margin: auto;">
+
+        <div class="row" id="invoicebox" style="width: 80%;margin: auto;">
           <button class="btn btn-lg btn-important btn-primary btn-block accordion" style="background-color: #EE3158 !important;">Invoice</button>
           <div class="panel" id="invoice">
             <div>
               <label>Select Shipping: </label>
-              <select id="delivery">
+              <select id="delivery" onchange="changeshipping()" ;>
                 <option value="110">10% on Cash on Delivery</option>
-
                 <option value="100">0% on Bank Transfer</option>
               </select>
             </div>
             <table id="producttable" class="table table-cart">
               <tbody>
                 <tr>
-                  <!-- <td>Brand</td> -->
                   <td> Product Details</td>
                   <td>Price</td>
                   <td></td>
                 </tr>
-
               </tbody>
             </table>
-            <div id="charges">
-              <div>
-                <h3> Service Charges: </h3>
+            <div class="price">
+              <div id="service">
+                <h4 id="service-charges"> Service Charges: Rs 0</h4>
               </div>
-              <div>
-                <h3>Grand Total: </h3>
+              <div id="total">
+                <h4 id="total-charges">Total Charges: Rs 0</h4>
               </div>
             </div>
           </div>
@@ -724,6 +721,12 @@
     var item_shipping = [];
     var item_color = [];
     var item_request = []
+    var grand_total = 0;
+    var total = 0;
+    var shipping_total = 0;
+    var price_total = 0;
+    var total_price = 0;
+    var service_charges = 0;
 
     function incHeight() {
       var el = document.getElementById("invoice");
@@ -781,47 +784,93 @@
             "<td><div>Quantity: " + formdata.quantity + "</div>" +
             " <div class='product-price'> Price: £ " + formdata.price + "</div>" +
             " Shipping: £ " + formdata.shipping + "</td>" +
-            "<td class='product-remove'> <i class='nc-icon-outline ui-1_circle-remove'></i></td>" +
+            "<td class='product-remove'> <i onclick='productdelete(this)' class='nc-icon-outline ui-1_circle-remove'></i></td>" +
             "</tr>");
           // console.log(item_brand)
           console.log(formdata)
-          var elem = document.getElementById("invoice");
+          var elem = document.getElementById("invoicebox");
           elem.scrollIntoView();
 
           // incHeight()
           document.getElementById("myform").reset();
-          var shipping_total = 0;
-          var price_total = 0;
-          var total_price = 0;
-          var grand_total = 0;
-          var i;
-          for (i = 0; i < item_shipping.length; i++) {
-            console.log(i)
-            shipping_total = shipping_total + item_shipping[i]
-            price_total = price_total + (item_qty[i] * item_price[i])
 
 
-          }
-          total_price = parseInt(shipping_total) + parseInt(price_total)
-          // console.log(item_shipping)
-          console.log(total_price, "shipping")
-          console.log(document.getElementById("delivery").value)
-          if (document.getElementById("delivery").value == 110) {
-            grand_total = total_price * 1.10
-          } else {
-            grand_total = total_price
-          }
-          console.log(grand_total)
+         calculateprice()
+          // console.log(service_charges)
+          // $("#total-charges").append(grand_total)
         }
 
+        // console.log(grand_total)
+
+
       }
-      // invoiceopen()
-      // document.getElementById("invoice").style.clear= "both";
-      // console.log("jj");
+
       xhr.send(data);
 
       // (C) PREVENT HTML FORM SUBMIT
       return false;
+    }
+    function calculateprice(){
+      shipping_total = price_total = 0
+          for (var i = 0; i < item_shipping.length; i++) {
+            // console.log(i)
+            shipping_total = shipping_total + item_shipping[i]
+            price_total = price_total + (item_qty[i] * item_price[i])
+          }
+
+          total_price = parseInt(shipping_total) + parseInt(price_total)
+          console.log(total_price, "total")
+          // grand_total += parseInt(total_price)
+          // console.log(item_shipping)
+          console.log(total_price, "shipping")
+          console.log(document.getElementById("delivery").value)
+          changeshipping();
+    }
+
+    function productdelete(ctl) {
+      // console.log(ctl.rowIndex)
+
+      $('#producttable').find('tr').click(function() {
+        console.log($(this).index());
+        index = $(this).index() - 1
+        console.log(index)
+        $(ctl).parents("tr").remove();
+        if (index > -1) {
+          item_brand.splice(index, 1);
+          item_price.splice(index, 1);
+          item_qty.splice(index, 1);
+          item_size.splice(index, 1);
+          item_url.splice(index, 1);
+          item_shipping.splice(index, 1);
+          item_color.splice(index, 1);
+          item_request.splice(index, 1);
+
+        }
+        calculateprice()
+        // console.log(item_brand)
+
+      });
+
+    }
+
+    function changeshipping() {
+      // console.log("jjjj")
+      if (document.getElementById("delivery").value == 110) {
+
+        // grand_total = parseInt(total_price)
+        service_charges = total_price * 0.10
+        grand_total = parseInt(total_price) + parseInt(service_charges)
+
+      } else {
+        grand_total = parseInt(total_price)
+        service_charges = 0
+      }
+      var myobj = document.getElementById("service-charges")
+      myobj.remove()
+      var obj = document.getElementById("total-charges")
+      obj.remove()
+      $("#service").append("<h4 id='service-charges'> Service Charges: Rs " + service_charges + "</h4>")
+      $("#total").append("<h4 id='total-charges'> Total Charges: Rs " + grand_total + "</h4>")
     }
   </script>
   <script>
