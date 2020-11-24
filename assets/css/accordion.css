@@ -1,20 +1,22 @@
 .accordion {
-    /* margin: 5%; */
-    /* margin-left: 50px; */
-    background-color: #EE3158 !important;
-    color: white;
-    cursor: pointer;
-    /* padding: 18px; */
-    /* width: 100%; */
-    /* border: none; */
-    /* text-align: left; */
-    /* outline: none; */
-    font-size: 15px;
-    transition: 0.4s;
-    font-family: 'Open Sans', arial;
-    height: auto;
-  }
-  .active, .accordion:hover {
+  /* margin: 5%; */
+  /* margin-left: 50px; */
+  background-color: #EE3158 !important;
+  color: white;
+  cursor: pointer;
+  /* padding: 18px; */
+  /* width: 100%; */
+  /* border: none; */
+  /* text-align: left; */
+  /* outline: none; */
+  font-size: 15px;
+  transition: 0.4s;
+  font-family: 'Open Sans', arial;
+  height: auto;
+}
+
+.active,
+.accordion:hover {
   /* background-color: #ccc; */
   cursor: pointer;
 
@@ -41,14 +43,109 @@
 
   transition: max-height 0.2s ease-out;
 }
-.cart{
-    display: flex;
-    flex-direction:row ;
-    justify-content: space-betweenynal;
-    /* overflow: hidden; */
-    /* display: flex; */
-    /* flex-direction: row; */
+
+.cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-betweenynal;
+  /* overflow: hidden; */
+  /* display: flex; */
+  /* flex-direction: row; */
 }
-.price{
+
+.price {
+  /* text-align: right; */
+  table-layout: fixed;
+  /* display:inline-block;
+    vertical-align: text-bottom;  */
+    /* float:right */
+}
+
+.shipping_select {
+  margin: 3%;
+  width: 80%;
+  border: 2px solid #EDEDED;
+  padding: 1%;
+  text-align: center;
+}
+
+.invoicebuttons {
   text-align: end;
+  margin: 2%;
+  /* display: inline; */
+}
+
+.invoicebuttons button {
+ 
+  background-color: #EE3158;
+  font-family: 'Open Sans', arial;
+  font-size: 15px;
+  color: white;
+  border: 1px solid #EDEDED;
+  height: auto;
+  padding: 1%;
+
+}
+
+table {
+  /* background-color: #EE3158; */
+  /* width: 100%; */
+  border-collapse: collapse;
+  /* table-layout: fixed; */
+  /* table-layout: fixed; */
+  width: 100% !important;
+  /* position: absolute; */
+}
+.firstrow{
+  /* background-color: #EE3158 !important; */
+  color: white;
+  opacity: 0.4;
+}
+
+.brand {
+vertical-align: middle
+}
+
+/* table, thead, tbody, th, td, tr { 
+  display: block; 
+} */
+table td{
+  word-wrap: break-word;
+  border: 1px solid #EDEDED
+}
+tr{
+  color: black; 
+}
+tr:nth-of-type(odd) { 
+  background-color: #EE3158;
+  color: white;
+  opacity: 0.6;
+}
+.product-remove{
+  vertical-align: text-top;
+}
+.table2{
+  width: 40% !important;
+}
+.table2 tr:nth-of-type(odd){
+  background-color:white;
+}
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
 }
