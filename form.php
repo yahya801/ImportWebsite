@@ -7,10 +7,6 @@ $brand = "";
 $url = "";
 $parse = $parse2 = $shipping = $qty = $size = $color = $price = $request =  "";
 $DC = array(800,1200,3500,4500,800,2000,1000,5000,700,1500,2250,3000,6000,9000);
-// Use parse_url() function to parse the URL 
-// $parse = var_dump(parse_url($url)); 
-// $urls = array("https://www.amazon.co.uk/", "https://www.aldoshoes.com/uk/en_UK");
-
 $url_uk_domain = array("https://www.adidas.co.uk/", "https://www.amazon.co.uk/", "https://www.clarks.co.uk/", "https://www.gap.co.uk/", "https://www.next.co.uk/", "https://www.ralphlauren.co.uk/", "https://www.reebok.co.uk/", "https://www.zalando.co.uk/", "https://www.underarmour.co.uk/en-gb/");
 $url_global_domain = array("https://www.asos.com/", "https://www.boohoo.com/", "https://www.debenhams.com/", "https://www.dunelondon.com/", "https://www.marksandspencer.com/", "https://www.riverisland.com/", "https://www.sportsdirect.com/", "https://www.topshop.com/", "https://www.boots.com/mothercare");
 $url_uk_market = array("https://www.aldoshoes.com/uk/en_UK", "https://www.armani.com/gb/armanicom/", "https://www.bershka.com/gb/", "https://www.gucci.com/uk/en_gb/", "https://www2.hm.com/en_gb/index.html", "https://www.harrods.com/en-gb", "https://www.lacoste.com/gb/", "https://shop.mango.com/gb", "https://www.massimodutti.com/gb/", "https://www.nastygal.com/gb/sitemap");
@@ -50,7 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $parse2_uk =  parse_url($url, PHP_URL_PATH);
             $pattern = array("/uk/", "/gb/", "/en_gb/", "/en-gb/", "/GB/", "/en_gbp/");
-            // $pattern2 ="/en_UK/";
             if ($parse == $parse2) {
                 for ($x = 0; $x < sizeof($pattern); $x++) {
                     $oo = preg_match($pattern[$x], $parse2_uk);
@@ -61,11 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
             }
 
-
-
-
-            // echo $oo;
-            // print_r($matches);
         } else if ($brand > 50 && $brand <= 58) {
             $brand_mod =  $brand % 10 - 1;
             $parse = parse_url($url_uk_market2[$brand_mod], PHP_URL_HOST);
@@ -109,6 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if($request == null){
                 $request = "NA";
             }
+          $price = convertCurrency($price);  
             echo json_encode([
                 "parsed" => $url_check,
                 "urlcheck" => $url_check,
@@ -124,7 +115,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             $url_check = "URL has an issue";
             echo json_encode([
-                // "urlerror" => $urlerror,
                 "parsed" => $url_check,
                 "brand" => $brand,
                 "urlcheck" => $url_check
@@ -133,9 +123,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-// // if(empty($errorMSG)){
-// // 	$msg = "Name: ".$name ;
-// // 	echo json_encode(['code'=>200, 'msg'=>$msg]);
-// // 	exit;
-// // }
-// echo $ ? "OK" : $error ;
+
+
+ 
+ function convertCurrency($price)  
+ {  
+      $url = "https://free.currconv.com/api/v7/convert?q=GBP_PKR&compact=ultra&apiKey=05f038474855c3fcfc6c";  
+      $data = file_get_contents($url);  
+      $conversion = json_decode($data,true);
+      $converted = $conversion['GBP_PKR'] * $price ;
+      $round = ceil($converted / 10) * 10;
+      return $round;
+ }  
+
+ ?>
+
+  
+
+
+

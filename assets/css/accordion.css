@@ -44,6 +44,15 @@
   transition: max-height 0.2s ease-out;
 }
 
+.panel2 {
+  padding: 0 18px;
+  background-color: white;
+  margin: auto;
+  width: 50%;
+  /* border: 2px solid #EDEDED; */
+  /* text-align: center; */
+}
+
 .cart {
   display: flex;
   flex-direction: row;
@@ -58,7 +67,7 @@
   table-layout: fixed;
   /* display:inline-block;
     vertical-align: text-bottom;  */
-    /* float:right */
+  /* float:right */
 }
 
 .shipping_select {
@@ -76,7 +85,7 @@
 }
 
 .invoicebuttons button {
- 
+
   background-color: #EE3158;
   font-family: 'Open Sans', arial;
   font-size: 15px;
@@ -96,40 +105,47 @@ table {
   width: 100% !important;
   /* position: absolute; */
 }
-.firstrow{
+
+.firstrow {
   /* background-color: #EE3158 !important; */
   color: white;
   opacity: 0.4;
 }
 
 .brand {
-vertical-align: middle
+  vertical-align: middle
 }
 
 /* table, thead, tbody, th, td, tr { 
   display: block; 
 } */
-table td{
+table td {
   word-wrap: break-word;
   border: 1px solid #EDEDED
 }
-tr{
-  color: black; 
+
+tr {
+  color: black;
 }
-tr:nth-of-type(odd) { 
+
+tr:nth-of-type(odd) {
   background-color: #EE3158;
   color: white;
   opacity: 0.6;
 }
-.product-remove{
+
+.product-remove {
   vertical-align: text-top;
 }
-.table2{
+
+.table2 {
   width: 40% !important;
 }
-.table2 tr:nth-of-type(odd){
-  background-color:white;
+
+.table2 tr:nth-of-type(odd) {
+  background-color: white;
 }
+
 .tab {
   display: none;
 }
@@ -140,7 +156,7 @@ tr:nth-of-type(odd) {
   width: 15px;
   margin: 0 2px;
   background-color: #bbbbbb;
-  border: none;  
+  border: none;
   border-radius: 50%;
   display: inline-block;
   opacity: 0.5;
@@ -148,4 +164,21 @@ tr:nth-of-type(odd) {
 
 .step.active {
   opacity: 1;
+}
+.labelled{
+  margin-bottom: 10px;
+  display: block;
+}
+.creditcard{
+  display: flex;
+  flex-wrap: wrap;
+}
+.item{
+  /* flex: 0 50%; */
+ 
+}
+.creditcard>div {
+  flex: 0 50%;
+  /*demo*/
+  
 }
