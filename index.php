@@ -261,6 +261,10 @@
             <span class="closebtn" style="height:10px" onclick="this.parentElement.style.display='none';">&times;</span>
             The form has an issue with the URL or Brandname
           </div>
+          <div id="shippingform" class="alert" style="display: none;width: auto;background-color: black; height: auto;">
+            <span class="closebtn" style="height:10px" onclick="this.parentElement.style.display='none';">&times;</span>
+            The form has an issue with the Email or Name
+          </div>
 
         </div>
       </div>
@@ -420,7 +424,7 @@
 
       <!-- BEGIN REGISTER -->
 
-      <!-- <?php include 'form.php' ?> -->
+      <!--  -->
       <!-- Form  -->
       <div id="scrollform" class="section container">
         <div class="row" style="width: 80%;margin: auto;">
@@ -551,7 +555,7 @@
                 <!-- <label>Select Shipping: </label> -->
                 <select id="delivery" class="shipping_select" onchange="changeshipping()" ;>
                   <option value="110">10% on Cash on Delivery</option>
-                  <option value="100">0% on Bank Transfer</option>
+                  <option value="100">0% on Credit Card</option>
                 </select>
               </div>
               <table id="producttable" class="table table-cart">
@@ -597,7 +601,7 @@
               <!-- formmm register -->
               <div class="m-b-100">
                 <h2> Shipping Details</h2>
-                <form id="shippingdetails" class="form-register">
+                <form id="shippingdetails" method="POST" class="form-register">
 
 
                   <div class="row">
@@ -616,7 +620,7 @@
                       <input id="email" type="email" class="form-control input-lg" placeholder="Email" required>
                     </div>
                     <div class="col-sm-6" style="margin-bottom: 2%;">
-                      <input id="number" type="number" class="form-control input-lg" placeholder="Phone No" required>
+                      <input id="phoneno" type="tel" class="form-control input-lg" placeholder="03xxxxxxxxx" required>
                     </div>
                     <!-- </div> -->
                   </div>
@@ -940,6 +944,9 @@
 
                 </form>
               </div>
+            </div>
+            <div class="tab">
+        <h2>summart</h2>
             </div>
             <div class="row">
               <div class="invoicebuttons">
@@ -1320,33 +1327,151 @@
       if (n == 0) {
         document.getElementById("addmore").style.display = "inline";
         document.getElementById("prevBtn").style.display = "none";
+        document.getElementById("nextBtn").innerHTML = "Next";
+        // document.getElementById("nextBtn").onclick = function() {
+        //   validate_shipping()
+        // };
         if (z) {
           document.getElementById("nextBtn").disabled = true;
         } else {
           document.getElementById("nextBtn").disabled = false;
         }
-      } else if (shipping_value == 110) {
+      }
+      if (n == 1) {
         document.getElementById("addmore").style.display = "none";
-        document.getElementById("prevBtn").style.display = "inline";
-      } else if (shipping_value == 100) {
-        nextPrev(2)
-        document.getElementById("nextBtn").innerHTML = "Submit";
-        document.getElementById("prevBtn").style.display = "inline";
+        if (shipping_value == 110) {
+          // console.log(shipping_value,'shop')
+          // document.getElementById("nextBtn").innerHTML = "Submit";
+          // document.getElementById("nextBtn").onclick = function() {validate_shipping()};
+          document.getElementById("prevBtn").style.display = "inline";
+        }
+        if (shipping_value == 100) {
+          // nextPrev(2)
+          // console.log(shipping_value, "ship")
+          document.getElementById("nextBtn").innerHTML = "Procedd to Payment";
+          document.getElementById("prevBtn").style.display = "inline";
+        }
+
       }
-      if (n == (x.length - 1)) {
-        document.getElementById("nextBtn").innerHTML = "Submit";
-      } else {
-        document.getElementById("nextBtn").innerHTML = "Next";
+
+      if(n==2){
+        document.getElementById("addmore").style.display = "none";
+        document.getElementById("nextBtn").innerHTML = "Check Out";
+        document.getElementById("prevBtn").style.display = "none";
       }
+      if(n==3){
+        document.getElementById("addmore").style.display = "none";
+        document.getElementById("nextBtn").style.display = "none";
+        document.getElementById("prevBtn").style.display = "none";
+      }
+      // else if (shipping_value == 110) {
+      //   document.getElementById("addmore").style.display = "none";
+      //   document.getElementById("prevBtn").style.display = "inline";
+      // }
+      //  else if (shipping_value == 100) {
+      //   nextPrev(2)
+      //   document.getElementById("nextBtn").innerHTML = "Submit";
+      //   document.getElementById("prevBtn").style.display = "inline";
+      // }
+      // if (n == (x.length - 1)) {
+      // document.getElementById("nextBtn").style.display = "none";
+      // document.getElementById("prevBtn").style.display = "none";
+      // }
+      // } else {
+      //   // document.getElementById("nextBtn").innerHTML = "Next";
+      // }
       fixStepIndicator(n)
     }
 
+    function validate_shipping() {
+      var fname = document.getElementById("firstname").value
+      var lname = document.getElementById("lastname").value
+      var email = document.getElementById("email").value
+      var phone_number = document.getElementById("phoneno").value
+      var country = document.getElementById("country").value
+      var city = document.getElementById("city").value
+      var address1 = document.getElementById("address1").value
+      var address2 = document.getElementById("address2").value
+
+      if (fname == "" || lname == "" || email == "" || phone_number == "" || country == "" || city == "" || address1 == "") {
+        var x = document.getElementById("shippingform");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+        return false
+      } else {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const phone = /^\d{11}$/
+        if (re.test(email) && (phone.test(phone_number))) {
+          var data1 = new FormData();
+          data1.append("fname", fname)
+          data1.append("lname", lname)
+          data1.append("email", email)
+          data1.append("phoneno", phone_number)
+          data1.append("address1", address1)
+          data1.append("append2", address2)
+          if(shipping_value == 110){
+
+            console.log("helll")
+            console.log(data1)
+            document.getElementById("shippingdetails").onsubmit
+            console.log(data1)
+          var xhd = new XMLHttpRequest();
+          console.log(data1)
+          xhd.open("POST", "shipping.php");
+          xhd.send(data1);
+          xhd.onload = function() {
+            console.log(data1,'lll')
+            console.log(this.response)
+            console.log(this.response)
+        var formdata = JSON.parse(this.response)
+          }
+          }
+        } else {
+          console.log("email or phone not valid")
+          var x = document.getElementById("shippingform");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+          return false
+        }
+        // if (phone.test(phone_number)){
+        //   console.log("phone valid")
+        // }
+
+        return true
+      }
+      // document.getElementById("shippingdetails").onsubmit
+      console.log("Neha is a Bitch")
+    }
+
     function nextPrev(n) {
+
       // This function will figure out which tab to display
       var x = document.getElementsByClassName("tab");
       // Exit the function if any field in the current tab is invalid:
       // if (n == 1) return false;
       // Hide the current tab:
+      if (currentTab == 1) {
+        var y = document.getElementById("shippingform");
+        if (y.style.display === "block") {
+          y.style.display = "none";
+        }
+        if (n == 1) {
+          if (validate_shipping() == false) {
+            console.log("exit")
+            return
+          } else {
+            if (shipping_value == 110) {
+              n = n + 1
+            }
+          }
+        }
+      }
       x[currentTab].style.display = "none";
       // Increase or decrease the current tab by 1:
       currentTab = currentTab + n;
