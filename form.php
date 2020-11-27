@@ -1,5 +1,6 @@
 <?php
-
+ session_start();
+// echo $_SESSION["color"];
 $name = "";
 $url_check = "";
 $brand = "";
@@ -128,10 +129,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  
  function convertCurrency($price)  
  {  
-      $url = "https://free.currconv.com/api/v7/convert?q=GBP_PKR&compact=ultra&apiKey=05f038474855c3fcfc6c";  
-      $data = file_get_contents($url);  
-      $conversion = json_decode($data,true);
-      $converted = $conversion['GBP_PKR'] * $price ;
+    //   $url = "https://free.currconv.com/api/v7/convert?q=GBP_PKR&compact=ultra&apiKey=05f038474855c3fcfc6c";  
+    //   $data = file_get_contents($url);  
+    //   $conversion = json_decode($data,true);
+      $converted = $_SESSION["conversion"] * $price ;
       $round = ceil($converted / 10) * 10;
       return $round;
  }  

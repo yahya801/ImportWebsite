@@ -1,3 +1,8 @@
+
+<?php 
+  // Start the session
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +48,17 @@
 </head>
 
 <body data-page-type="ecommerce" class="header-transparent header-scroll-dark footer-reveal">
-
+<?php 
+  // Start the session
+  $url = "https://free.currconv.com/api/v7/convert?q=GBP_PKR&compact=ultra&apiKey=05f038474855c3fcfc6c";  
+  $data = file_get_contents($url);  
+  $conversion = json_decode($data,true);
+  // Set session variables
+  // $_SESSION["color"]= "blue";
+  // $_SESSION["animal"]= "dog";
+  $_SESSION["conversion"] = $conversion['GBP_PKR'];
+  // echo $conversion['GBP_PKR'];
+?>
   <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
