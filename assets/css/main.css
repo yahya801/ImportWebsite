@@ -589,7 +589,7 @@ body.boxed .container-large {
 .section,
 .section-md.section {
   position: relative;
-  padding: 75px 0;
+  padding: 50px 0;
 }
 
 .section .title {
@@ -605,7 +605,7 @@ body.boxed .container-large {
   bottom: 0;
   background: #ee3158;
   opacity: 0.8;
-}
+} 
 
 .section-overlay.bg-primary,
 .section-overlay.overlay-primary,

@@ -1,7 +1,6 @@
-
-<?php 
-  // Start the session
-  session_start();
+<?php
+// Start the session
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,22 +42,26 @@
   <link rel="stylesheet" href="assets/css/ui.css" />
   <link rel="stylesheet" href="assets/css/widgets.css" />
   <link rel="stylesheet" href="assets/css/accordion.css" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="assets/js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
 
 </head>
 
 <body data-page-type="ecommerce" class="header-transparent header-scroll-dark footer-reveal">
-<?php 
+  <?php
   // Start the session
-  $url = "https://free.currconv.com/api/v7/convert?q=GBP_PKR&compact=ultra&apiKey=05f038474855c3fcfc6c";  
-  $data = file_get_contents($url);  
-  $conversion = json_decode($data,true);
+  $url = "https://free.currconv.com/api/v7/convert?q=GBP_PKR&compact=ultra&apiKey=05f038474855c3fcfc6c";
+  $data = file_get_contents($url);
+  $conversion = json_decode($data, true);
   // Set session variables
   // $_SESSION["color"]= "blue";
   // $_SESSION["animal"]= "dog";
   $_SESSION["conversion"] = $conversion['GBP_PKR'];
   // echo $conversion['GBP_PKR'];
-?>
+  ?>
   <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -385,6 +388,7 @@
       </section>
       <!-- END FEATURES -->
       <!-- BEGIN LOGOS CAROUSEL -->
+      <div>
       <div class="section container">
         <div class="row">
           <div class="col-md-12">
@@ -432,6 +436,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
       <!-- END LOGOS CAROUSEL -->
 
@@ -961,7 +966,24 @@
               </div>
             </div>
             <div class="tab">
-        <h2>summart</h2>
+              <!-- <div id="myModal" class="modal fade"> -->
+              <div class="modal-dialog modal-confirm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="icon-box">
+                      <i class="material-icons">&#xE876;</i>
+                    </div>
+                    <h4 class="modal-title w-100">Awesome!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+                  </div>
+                </div>
+              </div>
+              <!-- </div> -->
             </div>
             <div class="row">
               <div class="invoicebuttons">
@@ -989,6 +1011,7 @@
 
 
   </div>
+
 
 
 
@@ -1027,7 +1050,7 @@
         </div>
       </div>
     </div>
-    <div id="footer-bottom">
+    <!-- <div id="footer-bottom">
       <div class="container-fluid">
         <div class="row f-bottom">
           <div class="col-md-6">
@@ -1043,7 +1066,7 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
   </footer>
   <!-- END FOOTER -->
 
@@ -1094,6 +1117,8 @@
   <script type="text/javascript" src="assets/js/plugins/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
   <script type="text/javascript" src="assets/js/plugins/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
   <script type="text/javascript" src="assets/js/plugins/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script>
     if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
     window.onmousewheel = document.onmousewheel = wheel;
@@ -1369,12 +1394,12 @@
 
       }
 
-      if(n==2){
+      if (n == 2) {
         document.getElementById("addmore").style.display = "none";
         document.getElementById("nextBtn").innerHTML = "Check Out";
         document.getElementById("prevBtn").style.display = "none";
       }
-      if(n==3){
+      if (n == 3) {
         document.getElementById("addmore").style.display = "none";
         document.getElementById("nextBtn").style.display = "none";
         document.getElementById("prevBtn").style.display = "none";
@@ -1427,22 +1452,22 @@
           data1.append("phoneno", phone_number)
           data1.append("address1", address1)
           data1.append("append2", address2)
-          if(shipping_value == 110){
+          if (shipping_value == 110) {
 
             console.log("helll")
             console.log(data1)
             document.getElementById("shippingdetails").onsubmit
             console.log(data1)
-          var xhd = new XMLHttpRequest();
-          console.log(data1)
-          xhd.open("POST", "shipping.php");
-          xhd.send(data1);
-          xhd.onload = function() {
-            console.log(data1,'lll')
-            console.log(this.response)
-            console.log(this.response)
-        var formdata = JSON.parse(this.response)
-          }
+            var xhd = new XMLHttpRequest();
+            console.log(data1)
+            xhd.open("POST", "shipping.php");
+            xhd.send(data1);
+            xhd.onload = function() {
+              console.log(data1, 'lll')
+              console.log(this.response)
+              console.log(this.response)
+              var formdata = JSON.parse(this.response)
+            }
           }
         } else {
           console.log("email or phone not valid")
