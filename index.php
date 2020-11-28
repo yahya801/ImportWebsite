@@ -297,31 +297,31 @@ session_start();
         <div id="rev_slider" data-slider-layout="fullscreen" data-slider-thumbnail="true" class="rev_slider animated" data-animation="fadeIn" data-animation-delay="1000" data-version="5.0">
           <ul>
             <!-- SLIDE 1 -->
-            <li data-index="rs-1255" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off">
-              <!-- MAIN IMAGE -->
-              <img src="assets/img/banner/Hudabeauty.png" data-lazyload="assets/img/ecommerce/31.jpg" alt="ecommerce" width="1920" height="1017" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-              <!-- LAYER NR. 1 -->
-              <div class="tp-caption tp-caption-title tp-resizeme rs-parallaxlevel-0" data-voffset="['-10','0','-20','-140']" data-fontsize="['50','40','35','35']" data-lineheight="['60','50','45','40']" data-x="center" data-hoffset="0" data-y="center" data-whitespace="normal" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-responsive_offset="on" style="">
+            <!-- <li data-index="rs-1255" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off"> -->
+            <!-- MAIN IMAGE -->
+            <!-- <img src="assets/img/banner/Hudabeauty.png" data-lazyload="assets/img/ecommerce/31.jpg" alt="ecommerce" width="1920" height="1017" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina> -->
+            <!-- LAYER NR. 1 -->
+            <!-- <div class="tp-caption tp-caption-title tp-resizeme rs-parallaxlevel-0" data-voffset="['-10','0','-20','-140']" data-fontsize="['50','40','35','35']" data-lineheight="['60','50','45','40']" data-x="center" data-hoffset="0" data-y="center" data-whitespace="normal" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-responsive_offset="on" style="">
                 PREMIUM COLLECTION
-              </div>
-              <!-- LAYER NR. 2 -->
-              <div class="tp-caption tp-caption-line tp-resizeme rs-parallaxlevel-0" data-voffset="['65','55','25','-95']" data-x="center" data-hoffset="0" data-y="center" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-responsive_offset="on">
-                <!-- <img src="./assets/img/various/architecture.jpg" data-lazyload="assets/img/various/whitebar.png" alt="whitebar" width="350" height="2" data-ww="['350px','280px','240px','200px']" data-hh="2px" data-no-retina> -->
-              </div>
-              <!-- LAYER NR. 3 -->
-              <div class="tp-caption tp-caption-subtitle tp-resizeme rs-parallaxlevel-0" data-voffset="['100','80','60','-70']" data-fontsize="['25','25','24','23']" data-lineheight="['35','30','28','25']" data-x="center" data-hoffset="0" data-y="center" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;s:1000;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="500" data-responsive_offset="on">
+              </div> -->
+            <!-- LAYER NR. 2 -->
+            <!-- <div class="tp-caption tp-caption-line tp-resizeme rs-parallaxlevel-0" data-voffset="['65','55','25','-95']" data-x="center" data-hoffset="0" data-y="center" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-responsive_offset="on"> -->
+            <!-- <img src="./assets/img/various/architecture.jpg" data-lazyload="assets/img/various/whitebar.png" alt="whitebar" width="350" height="2" data-ww="['350px','280px','240px','200px']" data-hh="2px" data-no-retina> -->
+            <!-- </div> -->
+            <!-- LAYER NR. 3 -->
+            <!-- <div class="tp-caption tp-caption-subtitle tp-resizeme rs-parallaxlevel-0" data-voffset="['100','80','60','-70']" data-fontsize="['25','25','24','23']" data-lineheight="['35','30','28','25']" data-x="center" data-hoffset="0" data-y="center" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;s:1000;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="500" data-responsive_offset="on">
                 Perfect solution for your imported items
-              </div>
-              <!-- LAYER NR. 4 -->
-              <div class="tp-caption" data-voffset="['185','165','150','140']" data-x="center" data-hoffset="0" data-y="center" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;s:1000;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="500" data-responsive_offset="on">
-                <!-- <a href="#" data-go-to="#categories" class="btn btn-white btn-bordered btn-lg go-next m-b-20">View Categories</a> -->
-                <a href="#" class="btn btn-white btn-lg icon-left-effect m-b-20"><i class="nc-icon-glyph shopping_cart-simple"></i><span>BUY NOW</span></a>
-              </div>
-            </li>
+              </div> -->
+            <!-- LAYER NR. 4 -->
+            <!-- <div class="tp-caption" data-voffset="['185','165','150','140']" data-x="center" data-hoffset="0" data-y="center" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;s:1000;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="500" data-responsive_offset="on"> -->
+            <!-- <a href="#" data-go-to="#categories" class="btn btn-white btn-bordered btn-lg go-next m-b-20">View Categories</a> -->
+            <!-- <a href="#" class="btn btn-white btn-lg icon-left-effect m-b-20"><i class="nc-icon-glyph shopping_cart-simple"></i><span>BUY NOW</span></a> -->
+            <!-- </div>
+            </li> -->
             <!-- SLIDE 2 -->
             <li data-index="rs-1104" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-rotate="0" data-saveperformance="off" data-title="Trip">
               <!-- MAIN IMAGE -->
-              <img src="assets/img/banner/nike.png" data-lazyload="assets/img/ecommerce/33.jpg" alt="ecommerce" width="1920" height="1280" data-bgposition="left top" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+              <img src="assets/img/banner/nike2.jpg" data-lazyload="assets/img/ecommerce/33.jpg" alt="ecommerce" width="1920" height="1280" data-bgposition="left top" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
               <!-- LAYER NR. 1 -->
               <div class="tp-caption tp-caption-title tp-resizeme rs-parallaxlevel-0" data-voffset="['-10','0','-20','-140']" data-fontsize="['50','40','35','35']" data-lineheight="['60','50','45','40']" data-x="center" data-hoffset="0" data-y="center" data-whitespace="normal" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-responsive_offset="on" style="font-size:45px">
                 PREMIUM PRODUCTS
@@ -346,10 +346,63 @@ session_start();
         </div>
       </div>
       <!-- END REVOLUTION SLIDER -->
-      <div class="alert">
+      <!-- <div class="alert">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         This is an alert box.
+      </div> -->
+      
+      <!-- BEGIN LOGOS CAROUSEL -->
+      <div>
+        <div class="section container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title title-center m-b-0">
+                <h3>Our brands</h3>
+                <p class="subtitle">We work with best companies</p>
+              </div>
+              <div class="owl-carousel owl-theme clients m-b-0 animated" data-animation="fadeOver" data-animation-delay="150" data-items-desktop="5" data-items-tablet="3" data-plugin-options='{"autoplay":true,"nav":false,"autoplayTimeout":3000,"smartSpeed":1000,"items":4,"margin":0}'>
+                <div class="item">
+                  <img src="assets/img/logo/gucci.png" alt="logo 6" class="img-fluid">
+                </div>
+                <div class="item">
+                  <img src="assets/img/logo/HnM.png" alt="logo 7" class="img-fluid">
+                </div>
+                <div class="item">
+                  <img src="assets/img/logo/zara.png" alt="logo 8" class="img-fluid">
+                </div>
+                <div class="item">
+                  <img src="assets/img/logo/marknspencer.png" alt="logo 9" class="img-fluid">
+                </div>
+                <div class="item">
+                  <img src="assets/img/logo/riverisland.png" alt="logo 1" class="img-fluid">
+                </div>
+                <div class="item">
+                  <img src="assets/img/logo/next.png" alt="logo 2" class="img-fluid">
+                </div>
+                <div class="item">
+                  <img src="assets/img/logo/aldo.png" alt="logo 3" class="img-fluid">
+                </div>
+                <div class="item">
+                  <img src="assets/img/logo/mango.png" alt="logo 4" class="img-fluid">
+                </div>
+                <div class="item">
+                  <img src="assets/img/logo/amazon.png" alt="logo 4" class="img-fluid">
+                </div>
+                <div class="item">
+                  <img src="assets/img/logo/armani.png  " alt="logo 4" class="img-fluid">
+                </div>
+                <div class="item">
+                  <img src="assets/img/logo/nike.png" alt="logo 4" class="img-fluid">
+                </div>
+                <div class="item">
+                  <img src="assets/img/logo/lacoste.png" alt="logo 4" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- END LOGOS CAROUSEL -->
       <!-- BEGIN FEATURES -->
       <section class="section img-cover" data-bg-img="ecommerce/full-4.jpg" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -150px;">
         <div class="container">
@@ -387,58 +440,6 @@ session_start();
         </div>
       </section>
       <!-- END FEATURES -->
-      <!-- BEGIN LOGOS CAROUSEL -->
-      <div>
-      <div class="section container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title title-center m-b-0">
-              <h3>Our brands</h3>
-              <p class="subtitle">We work with best companies</p>
-            </div>
-            <div class="owl-carousel owl-theme clients m-b-0 animated" data-animation="fadeOver" data-animation-delay="150" data-items-desktop="5" data-items-tablet="3" data-plugin-options='{"autoplay":true,"nav":false,"autoplayTimeout":3000,"smartSpeed":1000,"items":4,"margin":0}'>
-              <div class="item">
-                <img src="assets/img/logo/gucci.png" alt="logo 6" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/logo/HnM.png" alt="logo 7" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/logo/zara.png" alt="logo 8" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/logo/marknspencer.png" alt="logo 9" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/logo/riverisland.png" alt="logo 1" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/logo/next.png" alt="logo 2" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/logo/aldo.png" alt="logo 3" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/logo/mango.png" alt="logo 4" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/logo/amazon.png" alt="logo 4" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/logo/armani.png  " alt="logo 4" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/logo/nike.png" alt="logo 4" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/logo/lacoste.png" alt="logo 4" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-      <!-- END LOGOS CAROUSEL -->
 
 
 
